@@ -4,7 +4,7 @@
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf docs && next build && mv out docs",
+    "build": "rm -rf docs && next build && mv out docs && cp pages/.nojekyll docs/.nojekyll",
     "start": "next start"
   },
   "repository": {
