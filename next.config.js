@@ -3,4 +3,4 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.tsx',
 })
 
-module.exports = withNextra({ output: 'export', assetPrefix: '/out', images: { unoptimized: true }})
+module.exports = withNextra({ output: 'export', assetPrefix: '/docs', images: { unoptimized: true }})
