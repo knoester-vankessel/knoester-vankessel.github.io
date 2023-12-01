@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "rm -rf docs && next build && mv out docs && cp pages/.nojekyll docs/.nojekyll",
-    "build-win": "rmdir docs && next build && mv out docs && cp pages/.nojekyll docs/.nojekyll",
+    "build-win": "rmdir docs && next build && ren out docs && copy pages/.nojekyll docs/.nojekyll",
     "start": "next start"
   },
   "repository": {
