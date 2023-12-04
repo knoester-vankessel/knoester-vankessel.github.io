@@ -13,7 +13,12 @@ Deze client communiceert vervolgens met de PrintNode-server, waardoor gebruikers
 
 Installeer PrintNode **ALTIJD** op een computer die verbonden is met het netwerk waar de printers op aangesloten zijn of waar de printer fysiek op aangesloten is! Zorg er tevens voor dat deze computer aanstaat wanneer er geprint moet worden.
 Daarom is het raadzaam een computer te kiezen die vrijwel altijd aan staat.
-> Het is niet nodig om op meerdere pc’s de applicatie te installeren.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  Het is niet nodig om op meerdere pc’s de applicatie te installeren.
+</Callout>
 
 PrintNode kan zowel op Windows, als op Apple (iOS) worden geïnstalleerd.
 
@@ -23,11 +28,16 @@ PrintNode kan zowel op Windows, als op Apple (iOS) worden geïnstalleerd.
    
 Kies de juiste installer op de website en installeer het programma.
 
-
-
-1. Download het installatiebestand via https://www.printnode.com/en/download.
-
-2. Open het installatie bestand en volg de stappen
+import { Steps } from 'nextra/components'
+ 
+<Steps>
+### Download applicatie
+ 
+Download het installatiebestand via https://www.printnode.com/en/download.
+ 
+### Installeer applicatie
+ 
+Open het installatie bestand en volg de stappen
 LET OP: bij het 4e scherm is er de mogelijkheid om de applicatie te installeren als Windows Service. Vink dit **NIET** aan!
 
 ![ecbase](/images/PrintNode/1.jpg)
@@ -42,7 +52,10 @@ LET OP: bij het 4e scherm is er de mogelijkheid om de applicatie te installeren 
 
 ![ecbase](/images/PrintNode/6.jpg)
 
-## PrintNode openen
+
+
+
+### PrintNode openen
 
 Na het installeren opent automatisch het programma. Het programma zal continue blijven draaien. Wanneer de computer uitgeschakeld wordt en opnieuw opgestart, wordt ook automatische het programma opgestart.
 
@@ -61,6 +74,8 @@ Stuur ons de naam van de PC waar PrintNode op geïnstalleerd staat en de namen v
 
  
 
+### Stuur gegevens
+
 Stuur ons deze gegevens alsvolgt toe in een email naar remco@ecbase.nl:
 
 - Bedrijf (klantnaam):	 *Bijvoorbeeld: JANSSEN AGF*
@@ -68,3 +83,4 @@ Stuur ons deze gegevens alsvolgt toe in een email naar remco@ecbase.nl:
 - Afleverbonprinter:	 *Bijvoorbeeld: HP-PRINT-KNT-1*
 - Palletlabelprinter:	 *Bijvoorbeeld: ZEB-ETIKET-2*
 
+</Steps>

@@ -1,9 +1,10 @@
 {
-  "index": "Introduction",
+  "index": "Inhoudsopgave",
   
-  
+
+   
   "about": {
-    "title": "About",
+    "title": "Over ecBase",
     "type": "page"
   },
   "contact": {
