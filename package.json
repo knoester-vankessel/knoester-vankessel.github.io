@@ -4,9 +4,9 @@
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf docs && next build && mv out docs && cp pages/.nojekyll docs/.nojekyll",
-    "build-win": "rmdir /s /q docs && next build && ren out docs",
-    "start": "next start"
+    "build": "rm -rf docs && next build && mv out docs && yarn copy",
+    "start": "next start",
+    "copy": "node build-script.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sharp": "^0.33.0"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
