@@ -1,0 +1,68 @@
+# Afbeeldingen in een carousel (Slider)
+
+## Wat is een slider?
+
+Een carrousel slider is een element op een website of in een app dat meerdere afbeeldingen, berichten of andere content-items weergeeft in één venster dat doorloopt of roteert. 
+Het lijkt op een carrousel/draaimolen waar verschillende items voorbijkomen, vandaar de naam.
+
+Het kan worden gebruikt om bijvoorbeeld meerdere afbeeldingen van producten te tonen, nieuwsberichten, klantrecensies of andere inhoud die je in een geordende volgorde wilt laten zien zonder te veel ruimte in te nemen op de pagina.
+ Gebruikers kunnen vaak door de items navigeren door op knoppen te klikken, via swipe-bewegingen op touchscreens of automatisch als een diavoorstelling.
+
+Carrousel sliders kunnen de gebruikerservaring verbeteren door het tonen van meerdere stukjes informatie op een beperkte ruimte, maar het is belangrijk om te onthouden dat te veel content in een carrousel de aandacht van gebruikers kan versnipperen of leiden tot minder interactie met de items die worden getoond.
+
+## Verschillende type slider
+
+Om de slider op alle apparaten correct weer te geven maken we gebruik van verschillende type sliders. 
+U kunt een slider instellen voor uw bestelapplicatie en van uw bestelwebsite.
+
+![ecbase](/images/Slider/App/slider_app_gsm.jpg)
+![ecbase](/images/Slider/Website/slider_site_gsm.jpg)
+
+## Slider instellen
+
+Om de slider in te stellen volgt men de volgende stappen.
+
+import { Steps } from 'nextra/components'
+ 
+<Steps>
+
+ ### Open in backoffice 'instellingen'
+
+Onder het tabblad 'Website' vind men de optie 'Sliders'. Klik deze aan.
+
+ ### Slider aanmaken
+
+ Klik op knop '+ Nieuw' om een nieuwe slider aan te maken.
+
+ Vul een naam in voor de slider. Vul (eventueel) een code in om de slider eenvoudiger te vinden.
+ Kies het type slider dat men wil instellen. Kies 'app' om de slider in te stellen voor de bestelapplicatie; Kies 'website'
+ om de slider in te stellen voor de bestelomgeving.
+
+ Men kan er voor kiezen om de slider actief of inactief te zetten. Zo kan men bijvoorbeeld ervoor kiezen om seizoensgebonden 
+ sliders te activeren of deactiveren. Denk bijvoorbeeld aan een Kerst-slider die men jaarlijks wil laten terugkomen.
+ Men kan maar 1 slider tegelijk actief hebben staan.
+
+ Wanneer men alle gegevens heeft ingevuld, klikt men op 'Opslaan' om de slider aan te maken.
+
+ ### Slide's toevoegen
+
+ Wanneer men de slider heeft aangemaakt, kan men beginnen met het toevoegen van het aantal slides.
+ Open de zojuist aangemaakte slider en druk op '+ Nieuwe slide'. Er open nu een venster met een aantal in te vullen velden.
+
+import { Tabs } from 'nextra/components'
+ 
+<Tabs items={['Titel', 'Status', 'Text', 'Afbeelding', 'Actie']}>
+  <Tabs.Tab>Deze tekst wordt **bovenaan** weergegeven in het tekstvak. Deze tekst is groter dan de andere tekst.</Tabs.Tab>
+  <Tabs.Tab>Hier kan men aangeven of de slider **actief** of **niet-actief** als status moet krijgen.</Tabs.Tab>
+  <Tabs.Tab>Deze tekst wordt in het tekstvak weergegeven, onder de Titel. Men kan hier gebruik maken van eenvoudige 
+  stijl aanpassingen, zoals **vet gedrukt** of *cursief*. </Tabs.Tab>
+  <Tabs.Tab>Hier kan men de afbeelding selecteren die weergegeven moet worden als slide.</Tabs.Tab>
+  <Tabs.Tab>Hier kan men een button aanmaken waar men kan linken naar gewenste websites of interne links.
+  Vul bij 'Label' de tekst in die weergegeven moet worden in de button. 'Tonen als' kan men zo instellen dat de gebruiker op
+  dezelfde pagina blijft (directe link) , of dat er een nieuw venster geopend word (nieuwe tab).
+ Bij 'Pagina type' kan men invullen of men gaat linken naar een interne pagina, zoals bijvoorbeeld uw nieuwspagina (CMS pagina),
+  Of dat men doorverwezen wordt naar een externe link buiten uw website.</Tabs.Tab>
+</Tabs>
+
+</Steps>
+
