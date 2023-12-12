@@ -1,0 +1,58 @@
+# Leverschema's
+
+Met leverschema's kunt u uw klanten koppelen aan een tijdsgebonden schema. Zo kunt u met deze oplossingen bijvoorbeeld uw klanten
+enkel op de door u aangegeven dagen een bestelling laten plaatsen.
+
+import { Steps } from 'nextra/components'
+ 
+<Steps>
+
+### Leverschema aanmaken
+
+In de backoffice ga naar 'instellingen' en klik in het vak 'Relaties' op 'Standaard Leverschema's'
+
+### Klik op '+ Nieuw Klantschema'
+
+Vul hier de naam van het leverschema in en eventueel een externe referentie. Vink de optie 'standaard' aan om dit leverschema
+in te stellen als standaard-leverschema. Wanneer u een nieuwe klant aanmaakt zal deze automatisch worden toegekend aan dit dit leverschema.
+
+### Leverschema instellen
+
+Om het leverschema vorm te geven klikt u op '+ Nieuwe dag'. deze kunt u alsvolgt instellen:
+
+import { Tabs } from 'nextra/components'
+ 
+<Tabs items={['Leverdag', 'Leverancier', 'Type', 'Uiterlijke Besteltijd']}>
+  <Tabs.Tab>Geef hier aan om welke dag het gaat dat de bestelling geleverd gaat worden</Tabs.Tab>
+  <Tabs.Tab>Hier kan men met het schema onderscheid maken om bepaalde producten van leveranciers op andere momenten beschikbaar te maken.
+  Denk bijvoorbeeld aan producten van een leverancier die enkel op 1 dag in de week geleverd kunnen worden, terwijl uw andere
+  producten alle dagen van de week geleverd kunnen worden.</Tabs.Tab>
+  <Tabs.Tab>U kunt onderscheid maken tussen de levertijden van **bestel** en **voorraad** artikelen.</Tabs.Tab>
+  <Tabs.Tab>De uiterlijke besteltijd geeft aan voor welke tijdstip het artikel besteld dient te worden</Tabs.Tab>
+  
+</Tabs>
+
+</Steps>
+
+## Voorbeeld 1 (simpel)
+
+In onderstaand voorbeeld kunt u een leverschema zien met de volgende instellingen:
+
+- Maandag t/m zaterdag de dagen waarop de klant een bestelling kan ontvangen.
+- Bestellingen die **voor** 23:00u geplaatst zijn, worden de volgende dag geleverd.
+- Geen onderscheid tussen bestel/voorraad artikelen of leveranciers.
+
+![ecbase](/images/Leverschema/leverschema_simpel.jpg)
+
+## Voorbeeld 2 (uitgebreid)
+
+In onderstaand voorbeeld kunt u een leverschema zien met de volgende instellingen:
+
+- Maandag, woensdag en vrijdag zijn de dagen waarop de klant een bestelling kan ontvangen.
+- Standaard op voorraad artikelen die de klant op maandag wil ontvangen, dienen op zaterdag **vóór** 15:00u worden geplaatst.
+Op woensdag en vrijdag dienen deze artikelen de dag van te voren **vóór** 15:00u te worden geplaatst.
+- Bestellingen met artikelen die uzelf niet op voorraad heeft, maar moet bestellen, dienen 2 dagen van te voren **vóór** 15:00u te worden geplaatst.
+Enkel de bestelartikelen die op maandag geleverd gaan worden, moeten op donderdag **vóór** 15:00u besteld worden. dit geeft u als
+leverancier de tijd om uw 'te bestellen artikelen' op het juiste moment in huis te hebben.
+
+![ecbase](/images/Leverschema/leverschema_uitgbr1.jpg)
