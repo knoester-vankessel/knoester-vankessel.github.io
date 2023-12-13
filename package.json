@@ -4,8 +4,8 @@
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf docs && next build && mv out docs && yarn copy",
-    "build-win": "rmdir /s /q docs && next build && ren out docs && yarn copy",
+    "build": "rm -rf docs && rm -rf .next && next build && mv out docs && yarn copy",
+    "build-win": "rmdir /s /q docs && rmdir /s /q .next && next build && ren out docs && yarn copy",
     "start": "next start",
     "copy": "node build-script.js"
   },
