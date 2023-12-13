@@ -6,7 +6,8 @@
     "productie": "Productie",
     "verkoop": "Verkoop",
     "webshop": "Webshop",
-    "wms": "WMS"
+    "wms-1.0": "WMS 1.0",
+    "wms-2.0": "WMS 2.0"
     
 }
 
