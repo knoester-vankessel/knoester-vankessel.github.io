@@ -1,0 +1,39 @@
+# Gebruikers toevoegen
+
+Om werknemers toegang tot het systeem te verlenen dienen deze worden aangemaakt als gebruiker in de backoffice.
+Denk aan kantoorpersoneel, chauffeurs, orderpickers en productiemedewerkers. Elke gebruiker kan aan een eigen profiel worden gekoppeld.
+
+Daarnaast kunnen er nog individuele rechten worden verleend of bepaalde rollen worden ingesteld.
+
+import { Steps } from 'nextra/components'
+ 
+<Steps>
+
+### Ga naar instellingen
+
+Open het instellingen venster door in de rechterbovenhoek te klikken.
+
+### Ga naar 'Gebruikers'
+
+Open het venster en klik op '➕ Nieuwe gebruiker'. Vul de gegevens in.
+
+### Toegangsprofiel
+
+Hier kan men het profiel toekennen aan de gebruiker. Deze zijn alsvolgt:
+
+| Profiel | Beschrijving |
+| ----------- | ----------- |
+| Geen Toegang | Blokkeert een gebruiker om in te loggen in onze systemen. |
+| Standaard Backoffice Gebruiker | Gebruiker heeft beperkte mogelijkheden in de backoffice. Facturen etc. zijn niet zichtbaar. |
+| Adminstrator | Volledig toegang tot alle functies en instellingen in onze systemen. |
+| Standaard WMS Gebruiker | Deze gebruiker heeft enkel toegang tot ons WMS systeem (orderpick, productie, magazijn). |
+| WMS Transport Gebruiker | Deze gebruiker heeft enkel toegang tot onze transport applicatie. |
+
+import { Callout } from 'nextra/components'
+
+<Callout type="warning" emoji="💡">
+
+Gebruik een cijfercode als gebruikersnaam. In ons WMS & Transport-applicatie moet met een cijfercode ingelogd worden!
+</Callout>
+
+</Steps>
