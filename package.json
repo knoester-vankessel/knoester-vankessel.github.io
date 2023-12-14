@@ -8,7 +8,7 @@
     "build-win": "rmdir /s /q docs && rmdir /s /q .next && next build && ren out docs && yarn copy",
     "start": "next start",
     "copy": "node build-script.js",
-    "install": "yarn"
+    "run-install": "yarn"
   },
   "repository": {
     "type": "git",
