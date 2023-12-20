@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+table {
+    @apply border table-auto
+}
+
+table th {
+    @apply text-left
+}
+
+table td, table th {
+    @apply p-2;
+}
+
+table tbody tr {
+    @apply odd:bg-zinc-50
+}
+
+table td {
+    @apply border-t;
+}
