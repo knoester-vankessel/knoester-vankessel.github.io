@@ -1,0 +1,38 @@
+# Emballage instellen
+
+In de backoffice heeft u de mogelijkheid om emballage te registreren en beheren. Om het emballage-systeem te kunnen gebruiken,
+dient u allereerst de emballage-stukken aan te maken. Dit gaat als volgt:
+
+import { Steps } from 'nextra/components'
+ 
+<Steps>
+
+### Open het emballage venster
+
+Ga in de backoffice naar de rechterbovenhoek en klik op 'Instellingen'.
+Klik hierna in het tabblad 'Artikelen' op de optie 'Emballage'.
+
+### Klik op '➕ Nieuw'
+
+Om een nieuw emballage unit aan te maken. De verplicht in te vullen velden zijn met een '🚩' weergegeven.
+
+Vul de gegevens in. De velden spreken voor zicht. Vul bij **Code** een gemakkelijk te herleiden code is.
+Gebruik de **Volgorde** om de sortering te bepalen in de backoffice, maar ook in het WMS of Transport App.
+**Bedrag** is het te berekenen bedrag in EURO.
+
+![ecbase](/images/emballage/nieuw_emballage.jpg)
+
+</Steps>
+
+Wanneer u alle emballage units aangemaakt heeft, kunt u de emballage gaan berekenen bij klanten. U kunt per klant de berekening van
+emballage 'actief' of 'inactief' zetten. Dit doet u als volgt. Ga naar de module **'Klanten'** en zoek de gewenste klant.
+Er opent nu een venster met optie's. Open het tabblad **'⚙️Systeem'** en kijk in het venster **'Opties'**.
+
+U kunt hier ervoor kiezen om d.m.v. de checkbox '☑' aan te vinken, emballage te berekenen.
+
+import { Callout } from 'nextra/components'
+
+<Callout type="warning" emoji="💡">
+
+Gebruik de [SNELBEWERK](snelbewerk) functie om meerdere klanten tegelijk te bewerken!
+</Callout>
