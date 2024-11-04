@@ -1,0 +1,102 @@
+# Kortingsmodule
+
+In de Backoffice kunt u voor klanten eenvoudig een korting toevoegen. Dit doet u als volgt:
+
+import { Steps } from "nextra/components";
+import { Callout } from "nextra/components";
+
+<Steps>
+
+### Open instellingen
+
+Ga in de backoffice naar de rechterbovenhoek en klik op de knop **instellingen**.
+
+### Ga naar Kortingen
+
+Open in het tablad **Financieel** het venster **Kortingen**.
+
+### Klik op de knop "➕ Nieuwe korting"
+
+Hiermee opent u de pop-up **Kortingsobject bewerken**.
+
+</Steps>
+
+## Gegevens invullen
+
+Nu opent er een nieuw venster, waarin u alle gegevens gaat invullen.
+Hieronder leggen wij uit hoe dit werkt.
+
+<Steps>
+### Naam
+
+Vul hier een unieke naam in, die u makkelijk terug kunt vinden.
+
+### Status
+
+Zet de korting op actief of niet actief.
+
+### Type
+
+Kies voor een doorlopende korting, coupon code, checkout korting of ontvang gratis product.
+
+### Verschillende soorten kortingen
+
+In de kortingsmodule kunt u kiezen tussen doorlopende korting, couponcode, checkout korting en onvtang gratis product.
+
+#### Doorlopende korting
+
+Wilt u een nieuwe actie starten? Bij de kortingsmodule kunt u een doorlopende korting selecteren.
+Deze kunt u beschikbaar maken voor bepaalde klantgroepen, of voor iedereen. Klik daarvoor de klantgroepen aan bij het kopje "Klantgroep status".
+Wanneer u geen klantgroepen selecteert geld de korting voor iedereen.
+
+#### Coupon code
+
+Selecteer de coupon code, schrijf een code (bijvoorbeeld WELKOM voor nieuwe klanten) en sla deze op.
+Klanten die de code hebben kunnen gebruik maken van de korting.
+Wil je dat je klanten de code maar één keer kunnen gebruiken? Selecteer dan "Eenmalige korting".
+
+#### Checkout korting
+
+Deze korting wordt aan het einde van de bestelling verwerkt.
+
+#### Ontvang gratis product
+
+Selecteer deze optie als u wilt dat uw klanten een gratis product ontvangen.
+
+### Klantgroep status
+
+Selecteer één of meerdere klantgroep als u wilt dat deze korting alleen voor bepaalde groepen geldt.
+
+<Callout type="warning">Bij "Coupon code" vult u dit veld **niet** in.</Callout>
+### Artikelgroep status
+
+Vul hier een artikelgroep of de artikelgroepen in waarvoor de korting geld. Wil je dat de code in de hele webshop werkt?
+Selecteer dan geen artikelgroepen.
+
+<Callout type="warning">
+  Bij "Ontvang gratis product" hoeft u **geen** artikelgroep te selecteren
+</Callout>
+
+### Leverancier
+
+Hier wordt automatisch _alle leveranciers_ geselecteerd. Natuurlijk kunt u ook een enkele leverancier kiezen. De producten die deze leverancier levert krijgen dan de aangeboden korting.
+
+### Korting
+
+In het veld korting geeft u aan hoeveel korting u aan de klant biedt.
+Kies tussen _Percentage van het bedrag ex BTW_ en _Vast bedrag korting op het bedrag incl BTW_.
+Vervolgens vult u hiernaast het percentage of bedrag in.
+
+Dit veld is niet zichtbaar bij "Ontvang gratis product". U kunt dan alleen aangeven hoeveel gratis producten de klant krijgt.
+
+### Minimum orderbedrag
+
+Hoeveel moet de klant bestellen om gebruik te kunnen maken van de korting? Vul een minimaal orderbedrag in. Dit bedrag kan ook 0.00 zijn, als u wilt dat iedere klant de korting krijgt.
+
+### Periode van t/m
+
+Vul in wanneer de korting ingaat en tot wanneer deze geldt.
+
+</Steps>
+
+Nu klikt u op opslaan. Heeft u alles goed ingevuld? Dan ziet u de korting terugkomen in het scherm. Hier kunt u alle gegevens nog een keer bekijken.
