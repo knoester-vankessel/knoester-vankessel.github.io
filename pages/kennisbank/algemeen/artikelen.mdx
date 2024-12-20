@@ -1,12 +1,155 @@
+import { Callout } from "nextra/components";
+import { Steps } from "nextra/components";
+
 # Artikelen
 
-## Levertype en dagen
+In het scherm artikelen kunt u meerdere dingen doen, zoals een nieuw artikel toevoegen en foto's toevoegen. Hier leggen we u uit hoe alles werkt.
 
-Selecteer **Voorraad artikel** als u het artikel direct op voorraad heeft.
-Heeft u het artikel niet in huis? Kies dan voor **Bestel artikel**.
+## Nieuw artikel toevoegen
 
-De bezorging krijgt de volgende kleuren:
+Let op: U hoeft lang niet alle gegevens in te vullen.
 
-- 0-1 dagen: groen
-- 2-4 dagen: oranje
-- 5 of meer dagen: rood
+<Steps>
+
+### Klik op het tabblad artikelen
+
+U krijgt nu een lijst van al uw artikelen te zien.
+
+### Klik op ➕ Nieuw artikel
+
+Hierna opent er een pop-up venster.
+Hier kunt u veel verschillende artikelgegevens invullen. Er zijn verschillende tabbladen.
+
+![ecbase](/images/artikelen/nieuw-artikel.png)
+
+### Vul de basisgegevens in
+
+| Naam                 | Wat vult u in?                                                                                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Handm. artikelnr.    | Hier kunt u een zelfgekozen artikelnummer invullen.                                                                                                                                         |
+| Naam                 | Vul de naam van het artikel in. Dit veld is verplicht.                                                                                                                                      |
+| Hoofdleverancier     | U kunt hier de leverancier van het artikel kiezen. Als u op het pijltje klikt ziet u alle mogelijkheden. Hieronder kunt u selecteren of de hoofdleverancier zichtbaar moet zijn op de site. |
+| Subleverancier       | Hier kunt u hetzelfde doen voor een eventuele subleverancier.                                                                                                                               |
+| Inkoop type          | Selecteer "bulk inkoop" of "inkoop per stuk".                                                                                                                                               |
+| Gem. levertijd (dgn) | Hier kunt u een gemiddelde levertijd voor dit product aangeven.                                                                                                                             |
+| Levertype en dagen   | Selecteer **Voorraad artikel** als u het artikel direct op voorraad heeft. Heeft u het artikel niet in huis? Kies dan voor **Bestel artikel**.                                              |
+| Artikelgroepen       | U kunt 1 of meerdere artikelgroepen aanzetten. Heeft u een webshop? Dan zien al uw klanten het product in deze artikelgroepen verschijnen.                                                  |
+| Inhoud/eenheid       | Hier kunt u invullen hoeveel er in een verpakking zit. Dat kan in ml, gram of stuks.                                                                                                        |
+| Land                 | Hier vult u het land van herkomst van het product in.                                                                                                                                       |
+| Product status       | Hier heeft u de keuze uit "actief", "niet actief" en "tijdelijk niet actief". Normaal gesproken zet u een artikel altijd op actief.                                                         |
+| Klantgroep status    | Hier vult u de klantgroepen in waarvoor het product zichtbaar moet zijn.                                                                                                                    |
+
+### Vul het gedeelte over prijzen in
+
+import { Tabs } from "nextra/components";
+
+<Tabs
+  items={[
+    "Laatst bekende inkoopprijs",
+    "Basisprijs",
+    "Kostprijs",
+    "Adviesprijs",
+    "BTW",
+  ]}
+>
+  <Tabs.Tab>Hier vult u de inkoopprijs in.</Tabs.Tab>
+  <Tabs.Tab>
+    Vul hier de prijs van het product in. Als de klant geen speciale korting
+    krijgt, is dit de prijs die hij of zij betaalt.
+  </Tabs.Tab>
+  <Tabs.Tab> Vul hier de kostprijs in. Dit is een verplicht veld.</Tabs.Tab>
+  <Tabs.Tab>
+    Sommige producten hebben een adviesprijs. Deze kunt u hier invullen.
+  </Tabs.Tab>
+  <Tabs.Tab>
+    Kies het juiste BTW percentage uit de verschillende opties. Dit veld is
+    verplicht.
+  </Tabs.Tab>
+</Tabs>
+
+### Klik op het volgende tabblad "Omschrijving"
+
+Hier kunt u een korte productomschrijving voor het artikel invullen.
+
+### Vervolgens gaat u naar het tabblad "Label gegevens"
+
+Hier kunnen gegevens voor een eventueel gegenereerd label ingevuld worden. Dit gebruikt u bijvoorbeeld als u het product gaat stickeren.
+
+### Klik op het tabblad "Zoekinstellingen"
+
+Dit tabblad is speciaal voor de webshop. Hier kunt u zoekwoorden invullen en speciale eigenschappen van het product aanvinken.
+Daarnaast vult u hier de meta tags in.
+
+### Ga verder naar "Extra informatie"
+
+Wilt u nog meer informatie geven aan uw klant? Dan kunt u dit hier kwijt.
+Schrijf bijvoorbeeld een uitgebreide omschrijving over uw product, of zeg iets over de bereidingswijze.
+Daarnaast kun u hier belangrijke informatie over de allergenen en houdbaarheid kwijt.
+
+### Open het tabblad "Prijzen"
+
+Hier kunt u regels invoeren die de prijs regelen. Het systeem kijkt per groep of er een regel is voor een klant.
+Heeft u een prijsafspraak met een klant? Vul deze dan hier in. Klik daarvoor op de knop "Nieuw".
+Er opent een pop-up scherm. Hierin vult u het volgende in:
+
+- Klant: Kies de klant uit de lijst
+- Eenheid: Kies de juiste eenheid uit de lijst
+- Staffel: Vul hier in hoeveel de klant moet bestellen om de korting te krijgen. De staffel staat standaard ingesteld op 0. Dat betekent dat de klant de korting al vanaf 1 verpakking krijgt.
+- Prijsregel heeft begindatum: Vul dit in als u de korting wilt laten gelden vanaf een datum in de toekomst. Wanneer u dit niet aanvinkt gaat de korting direct in.
+- Prijsregel heeft einddatum: Vink dit vakje in als u de korting tot een bepaalde datum wilt laten gelden.
+- Opslag type: Hier kunt u kiezen uit verschillende mogelijkheden. Kies voor een vaste prijs als u zelf de verkoopprijs in wilt voeren.
+  U kunt ook kiezen voor een kortingsbedrag of een kortingspercentage. Daarnaast kunt u kiezen voor een opslagprijs of opslag percentage. Dan neemt het systeem de basisprijs en telt hier het bedrag of percentage bij op.
+  Klik vervolgens op opslaan om de prijsregel op te slaan. Deze kunt u later altijd nog aanpassen.
+
+U kunt ook een tijdelijke prijs op klantgroep instellen. Let op: deze worden wel verwijderd wanneer de basisprijs verandert. Daarnaast kunt u een vaste prijs op klantgroep niveau instellen.
+Hierbij vult u dezelfde gegevens in.
+
+Tot slot kunt u een korting op prijslijst niveau toevoegen.
+
+### Overige tabbladen
+
+Er zijn nog veel meer tabbladen die u kunt invullen. Hieronder leggen we er nog een aantal uit:
+
+#### Vertalingen
+
+Hier kunt u product vertalingen voor Engels, Duits, Frans en Spaans toevoegen.
+
+#### Ingrediënten
+
+Bij dit tabblad kunt u verschillende ingrediënten toevoegen. Vul het ingrediënt in en geef hierbij het percentage in.
+
+#### Voorraad
+
+Hier kunt u de actuele voorraad inzien en eventuele correcties doorvoeren.
+
+#### Inkooporders
+
+Bekijk de inkooporders voor dit product over een bepaalde periode.
+
+#### Attributen/Vrije velden
+
+Hier zijn vooringestelde velden die specifiek voor dit product gelden te zien. Zo kunt u nog meer informatie toevoegen.
+
+#### Voedingswaarde
+
+Hier kunt u de voedingswaarde voor het product invullen. De velden met een rode vlag zijn verplicht.
+
+#### Allergenen
+
+Vul hier de lijst van allergenen in. Deze bestaat uit wettelijke allergenen (deze moet u aangeven) en additionele allergenen.
+
+#### Contracten
+
+Hier kunt u bestaande contracten inzien en nieuwe contracten toevoegen.
+
+</Steps>
+## Foto's toevoegen
+Natuurlijk kunt u ook foto's toevoegen aan uw product. Wij leggen u in onderstaand stappenplan uit hoe u dit doet.
+1. Klik op het pijltje naast het product.
+2. Selecteer **Foto's beheren**.
+3. Klik op **Bestand kiezen**.
+4. Kies uw afbeelding/pdf die u wilt toevoegen.
+5. Kies voor het type foto: afbeelding of pdf.
+6. Selecteer Copyright als er op uw afbeelding copyright rust.
+7. Voeg een omschrijving toe.
+8. Klik op uploaden.
