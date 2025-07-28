@@ -69,28 +69,27 @@ Dit scherm toont een besteladvies van voorraadartikelen uw magazijn. Het overzic
 
 Het systeem berekent het advies op basis van de verkoopgegevens van de door u ingestelde periode, instelbaar rechtsboven in de module.
 
-**De berekening voor het besteladvies werkt per product als volgt:**
+### De berekening voor het besteladvies werkt per product als volgt:
 
-1. Controle op minimale voorraad:
+**1. Controle op minimale voorraad:**
 
 - Het systeem vergelijkt de huidige voorraad met de minimale voorraad.
 - Als de huidige voorraad lager is dan de minimale voorraad, dan wordt het artikel als aanvulbehoefte gemarkeerd.
 
-2. Berekening van het aanvuladvies:
+**2. Berekening van het aanvuladvies:**
 
 Het verschil tussen de maximale voorraad en de huidige voorraad wordt berekend:
 
-- Aan te vullen hoeveelheid = Maximale voorraad - Huidige voorraad
-- Afronden op besteleenheid:
+`Aan te vullen hoeveelheid = Maximale voorraad - Huidige voorraad`
 
-3. Aanvullen op basis van besteleenheid:
+**3. Aanvullen op basis van besteleenheid:**
 
 - Deze hoeveelheid wordt vervolgens aangepast op basis van de waarde in "bestellen per".
 - Het systeem rondt de aanvulhoeveelheid omhoog naar het dichtstbijzijnde veelvoud van deze besteleenheid:
 
 `Besteladvies = Omlaag afgeronde hoeveelheid / Bestellen per * Bestellen per`
 
-4. Resultaat:
+**4. Resultaat:**
 
 - Dit geeft het besteladvies dat wordt weergegeven in de kolom “Advies”.
 - Dit advies kan handmatig worden aangepast via de kolom “Aantal inkoop”.
@@ -99,4 +98,4 @@ Het verschil tussen de maximale voorraad en de huidige voorraad wordt berekend:
 
 **Kort samengevat:**
 
-Als de huidige voorraad < minimale voorraad → aanvullen tot maximale voorraad, afgerond naar het dichtstbijzijnde veelvoud van “bestellen per”.
+`Als de huidige voorraad < minimale voorraad → aanvullen tot maximale voorraad, afgerond naar het dichtstbijzijnde veelvoud van “bestellen per”.`
