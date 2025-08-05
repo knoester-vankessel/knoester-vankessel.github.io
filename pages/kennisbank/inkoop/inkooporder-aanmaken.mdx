@@ -1,9 +1,8 @@
 # Inkooporder Aanmaken
 
-
 De inkooporder is een officieel document dat wordt gebruikt in het inkoopproces van uw bedrijf.
-Het wordt door u naar uw leverancier gestuurd om de intentie tot aanschaf van goederen vast te leggen. 
-Belangrijke details zoals hoeveelheid, beschrijving van items, prijs, leverings- en betalingsvoorwaarden worden hierin gespecificeerd. 
+Het wordt door u naar uw leverancier gestuurd om de intentie tot aanschaf van goederen vast te leggen.
+Belangrijke details zoals hoeveelheid, beschrijving van items, prijs, leverings- en betalingsvoorwaarden worden hierin gespecificeerd.
 
 ## Nieuwe inkooporder
 
@@ -21,7 +20,9 @@ een snelkoppeling naar 'Nieuwe inkoop'.
 
 ### Inkoop order samenstellen
 
-Kies nu de leverancier waarnaar u de inkooporder versturen wil. Wanneer u deze heeft gekozen opent het venster waar de inkooporder
+Kies nu de leverancier waarnaar u de inkooporder versturen wil.
+
+Wanneer u deze heeft gekozen opent het venster waar de inkooporder
 kan worden samengesteld. De besteldatum staat standaard op de dag waarop u de inkooporder aanmaakt. U kunt er ook voor kiezen om
 deze aan te passen naar een datum in het verleden of toekomst. Daaronder geeft u aan wanneer u de bestelling ontvangen wilt.
 
@@ -36,19 +37,20 @@ om een lege regel toe te voegen. Klik op de regel en begin met typen. Automatisc
 en kunt u d.m.v. het toetsenbord of muis het juiste artikel selecteren. Gebruik hierna de 'TAB'- of 'ENTER' toets om naar de volgende
 kolommen te springen. Vul bijvoorbeeld de eenheid, inkoopprijs en aantallen in.
 
-import { Callout } from 'nextra/components'
- 
+import { Callout } from "nextra/components";
+
 <Callout type="warning" emoji="💡">
-  Wanneer u de regel doorentert met de 'ENTER'- of 'TAB' springt er automatisch een nieuwe regel in! 
+  Wanneer u de regel doorentert met de 'ENTER'- of 'TAB' springt er automatisch
+  een nieuwe regel in!
 </Callout>
+
+![ecbase](/images/inkoop/inkooporder_aanmaken.gif)
 
 ### Inkooporder versturen
 
 Wanneer u alle artikelen heeft toegevoegd, kunt u ervoor kiezen om deze inkooporder te verzenden naar de leverancier.
 Klik op het tabblad 'Bestellen'. Wanneer u de gegevens volledig ingevuld heeft bij de leverancier zijn deze automatisch ingevuld.
 Daarnaast kunt u een afzender e-mailadres, afzender naam, en andere gegevens invullen.
-
-
 
 Deze kunt u ook automatisch invullen door een standaard vormgegeven mail (template) in te voeren en standaard afzender.
 Dit kunt u instellen via 'instellingen' -> 'Mijn Account' -> 'E-mail instellingen'.
@@ -59,29 +61,50 @@ Wanneer alle gegevens ingevuld zijn, kunt u de inkooporder versturen. Dit kunt u
 De leverancier ontvangt van u een e-mail met in de bijlage de inkooporder in .PDF formaat. Deze kunt u zelf printen of opslaan door
 aan de bovenzijde van dit scherm op de knop '🖨️ Bestelbon' te drukken.
 
-
 </Steps>
 
 U kunt de order aan bepaalde statussen toewijzen deze zijn alsvolgt:
 
-import { Tabs } from 'nextra/components'
- 
-<Tabs items={['Nieuw', 'Klaar voor bestellen', 'Besteld', 'Ontvangst gemeld', 'Ontvangen', 'Gereed' ]}>
-  <Tabs.Tab>Deze status krijgt de inkooporder op het moment dat u deze nieuw aangemaakt heeft.</Tabs.Tab>
-  <Tabs.Tab>Deze status krijgt de inkooporder wanneer deze nog niet besteld is, maar nog **ter controle** kan worden bekeken door andere inkopers.</Tabs.Tab>
-  <Tabs.Tab>Deze status krijgt de inkooporder wanneer men de inkooporder verstuurd heeft naar de leverancier.</Tabs.Tab>
-  <Tabs.Tab>Deze status krijgt de inkooporder wanneer er een tussenstap wordt toegevoegd tussen een werknemer die de order
-  in ontvangst neemt & een werknemer die de order in de voorraad inboekt.</Tabs.Tab>
-  <Tabs.Tab>Deze status krijgt de inkooporder op het moment dat de order door de werknemer is ontvangen en wordt ingeboekt
-  in de voorraad. Hierna kunnen de aantallen niet meer worden aangepast.</Tabs.Tab>
-  <Tabs.Tab>Wanneer de order deze status heeft, wordt deze gearchiveerd.</Tabs.Tab>
- 
+import { Tabs } from "nextra/components";
+
+<Tabs
+  items={[
+    "Nieuw",
+    "Klaar voor bestellen",
+    "Besteld",
+    "Ontvangst gemeld",
+    "Ontvangen",
+    "Gereed",
+  ]}
+>
+  <Tabs.Tab>
+    Deze status krijgt de inkooporder op het moment dat u deze nieuw aangemaakt
+    heeft.
+  </Tabs.Tab>
+  <Tabs.Tab>
+    Deze status krijgt de inkooporder wanneer deze nog niet besteld is, maar nog
+    **ter controle** kan worden bekeken door andere inkopers.
+  </Tabs.Tab>
+  <Tabs.Tab>
+    Deze status krijgt de inkooporder wanneer men de inkooporder verstuurd heeft
+    naar de leverancier.
+  </Tabs.Tab>
+  <Tabs.Tab>
+    Deze status krijgt de inkooporder wanneer er een tussenstap wordt toegevoegd
+    tussen een werknemer die de order in ontvangst neemt & een werknemer die de
+    order in de voorraad inboekt.
+  </Tabs.Tab>
+  <Tabs.Tab>
+    Deze status krijgt de inkooporder op het moment dat de order door de
+    werknemer is ontvangen en wordt ingeboekt in de voorraad. Hierna kunnen de
+    aantallen niet meer worden aangepast.
+  </Tabs.Tab>
+  <Tabs.Tab>
+    Wanneer de order deze status heeft, wordt deze gearchiveerd.
+  </Tabs.Tab>
 </Tabs>
 
-
- 
 <Callout type="warning" emoji="💡">
-  Wanneer u de inkooporder verstuurt naar de leverancier d.m.v. de knop '📨 Opslaan & Bestellen' krijgt de order automatisch de status **Besteld**.
+  Wanneer u de inkooporder verstuurt naar de leverancier d.m.v. de knop '📨
+  Opslaan & Bestellen' krijgt de order automatisch de status **Besteld**.
 </Callout>
-
-
