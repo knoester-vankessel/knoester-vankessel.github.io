@@ -67,14 +67,15 @@ Dit scherm toont een besteladvies van voorraadartikelen uw magazijn. Het overzic
 
 ![ecbase](/images/inkoop/besteladvies/Afbeelding5.png)
 
-Het systeem berekent het advies op basis van de verkoopgegevens van de door u ingestelde periode, instelbaar rechtsboven in de module.
+Het systeem berekent het besteladvies voor voorraadartikelen op basis van de **maximale voorraadgrens**.
+De verkoopgegevens worden gebruikt om te controleren of het advies voldoende is om de vraag in de komende periode te dekken.
 
 ### De berekening voor het besteladvies werkt per product als volgt:
 
 **1. Controle op minimale voorraad:**
 
 - Het systeem vergelijkt de huidige voorraad met de minimale voorraad.
-- Als de huidige voorraad lager is dan de minimale voorraad, dan wordt het artikel als aanvulbehoefte gemarkeerd.
+- Als de huidige voorraad plus de reeds bestelde (nog te ontvangen) hoeveelheid lager is dan de minimale voorraad, dan wordt het artikel als aanvulbehoefte gemarkeerd.
 
 **2. Berekening van het aanvuladvies:**
 
