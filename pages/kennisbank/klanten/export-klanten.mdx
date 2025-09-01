@@ -1,0 +1,74 @@
+# 📤 Klanten exporteren uit eCBase
+
+Deze handleiding legt stap voor stap uit hoe je klanten exporteert naar Excel in het eCBase backoffice-systeem. De export kan gebruikt worden voor verdere verwerking of import in systemen zoals **Nextra**.
+
+## 🧭 Stappenplan
+
+1. **Ga naar het tabblad `Klanten`**  
+   Navigeer in het bovenmenu naar **🧑 Klanten**. Je ziet nu een overzicht van alle klanten.
+
+2. **Filter klanten (optioneel)**  
+   Gebruik de filters bovenaan of rechtsboven in het zoekveld om te filteren op:
+
+   - Klantgroep (Grootverbruik/Kleinverbruik)
+   - Postcode of plaats
+   - Leveringsschema’s
+   - Actieve klanten
+
+3. **Selecteer klanten**  
+   Vink de klanten aan die je wilt exporteren via de checkbox links van elke regel. Laat je alle klanten geselecteerd, dan worden ze allemaal geëxporteerd.
+
+4. **Klik op `Export Excel`**
+
+![ecbase](/images/klanten/export-klanten.gif)
+
+5. **Download het bestand**  
+   Na het klikken op de knop zal een `.xlsx`-bestand automatisch worden gegenereerd. Sla het lokaal op je computer op.
+
+---
+
+## ✅ Exportformaat
+
+De geëxporteerde Excel bevat onderstaande kolommen:
+
+| Kolomnaam    | Beschrijving                   |
+| ------------ | ------------------------------ |
+| `Naam`       | Klantnaam                      |
+| `Adres`      | Straat en huisnummer           |
+| `Postcode`   | Postcode van klant             |
+| `Plaats`     | Woonplaats                     |
+| `Land`       | Land (standaard: Nederland)    |
+| `Klantgroep` | Grootverbruik of Kleinverbruik |
+| `StdLev.`    | Standaardlevering (Ja/Nee)     |
+| `DebNr.`     | Debiteurnummer                 |
+
+---
+
+import { Callout } from "nextra/components";
+
+<Callout type="info" emoji="💡">
+  Als je het Excel-bestand wilt gebruiken voor een{" "}
+  <strong>import in Nextra</strong>, zorg dan dat je de kolomnamen en structuur
+  aanpast aan het gewenste importformaat. Eventueel kun je het bestand omzetten
+  naar <code>.csv</code>.
+</Callout>
+
+---
+
+## 🛠️ Tip
+
+Gebruik de knop **`Snel bewerk`** bovenaan het scherm om klantgegevens te wijzigen vóór je een export uitvoert.
+
+---
+
+## 📎 Vereisten voor Nextra-import
+
+Als Nextra een ander importformaat vereist, houd dan rekening met:
+
+- Kolomvolgorde en namen
+- Eventuele verplichte velden
+- CSV-indeling en scheidingsteken (komma, puntkomma)
+
+---
+
+Heb je een sjabloon nodig voor Nextra-import? Laat het me weten, dan kan ik die voor je opmaken.
