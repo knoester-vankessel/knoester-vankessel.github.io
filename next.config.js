@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProduction = process.env.NODE_ENV === "production";
-const assetPrefix = isProduction ? "/$REPO" : "";
+const assetPrefix = isProduction ? "" : "";
 const titleSuffix = "– ecBase Documentatie"
 
 const withNextra = require('nextra')({

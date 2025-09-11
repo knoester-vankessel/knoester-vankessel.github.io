@@ -16,21 +16,6 @@ export default function MyApp({ Component, pageProps }) {
     return null;
   }
   return (!password || !correct) && !storage ? (
-    <Login />
-  ) : (
-    <Component {...pageProps} />
-  );
-}
-
-const Login = () => {
-  const [password, setPassword] = useState(null);
-  const [correct, setCorrect] = useState(false);
-  const storage =
-    typeof window !== "undefined" ? localStorage.getItem("password") : null;
-  if (typeof window === "undefined") {
-    return null;
-  }
-  return (
     <div
       style={{
         display: "flex",
@@ -71,5 +56,7 @@ const Login = () => {
         Inloggen
       </button>
     </div>
+  ) : (
+    <Component {...pageProps} />
   );
-};
+}
