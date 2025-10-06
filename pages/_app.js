@@ -15,6 +15,7 @@ export default function MyApp({ Component, pageProps }) {
   if (!mounted) {
     return null;
   }
+  /**
   return (!password || !correct) && !storage ? (
     <div
       style={{
@@ -59,4 +60,7 @@ export default function MyApp({ Component, pageProps }) {
   ) : (
     <Component {...pageProps} />
   );
+   */
+
+  return <Component {...pageProps} />;
 }
